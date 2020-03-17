@@ -1,16 +1,12 @@
-//#import <React/RCTBridgeModule.h>
-//
-//@interface IosKeyboardLibrary : NSObject <RCTBridgeModule>
-//
-//@end
 
-#import <Foundation/Foundation.h>
+#if __has_include("RCTBridgeModule.h")
+#import "RCTBridgeModule.h"
+#else
+#import <React/RCTBridgeModule.h>
+#endif
 
-NS_ASSUME_NONNULL_BEGIN
+@interface IosKeyboardLibrary : NSObject <RCTBridgeModule>
 
-@interface IosKeyboardLibrary : NSObject
--(void) showToast:(NSString*) msg;
--(void) showToast:(NSString*) msg duration:(double) duration;
 @end
 
-NS_ASSUME_NONNULL_END
+

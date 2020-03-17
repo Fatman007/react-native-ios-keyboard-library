@@ -1,10 +1,11 @@
 
-#if __has_include("RCTBridgeModule.h")
-#import "RCTBridgeModule.h"
-#else
-#import <React/RCTBridgeModule.h>
-#endif
+#import <Foundation/Foundation.h>
 
-@interface RNNativeToastLibrary : NSObject <RCTBridgeModule>
+NS_ASSUME_NONNULL_BEGIN
 
+@interface RNIosKeyboardLibrary : NSObject
+-(void) showToast:(NSString*) msg;
+-(void) showToast:(NSString*) msg duration:(double) duration;
 @end
+
+NS_ASSUME_NONNULL_END
