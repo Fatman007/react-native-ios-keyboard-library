@@ -13,7 +13,7 @@
 - (instancetype)init {
     self = [super init];
     if (self) {
-        self.toast = [[IosKeyboardLibrary alloc] init];
+        self.toast = [[RNIosKeyboardLibrary alloc] init];
     }
     return self;
 }
@@ -35,3 +35,4 @@ RCT_EXPORT_METHOD(show:(NSString *)text)
 }
 
 @end
+
