@@ -1,4 +1,4 @@
-package com.reactlibrary;
+package com.IosKeyboardLibrary;
 
 import java.util.Arrays;
 import java.util.Collections;

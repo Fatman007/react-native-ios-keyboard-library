@@ -1,4 +1,7 @@
-package com.reactlibrary;
+package com.IosKeyboardLibrary;
+
+import android.content.Context;
+import android.widget.Toast;
 
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
@@ -23,5 +26,11 @@ public class IosKeyboardLibraryModule extends ReactContextBaseJavaModule {
     public void sampleMethod(String stringArgument, int numberArgument, Callback callback) {
         // TODO: Implement some actually useful functionality
         callback.invoke("Received numberArgument: " + numberArgument + " stringArgument: " + stringArgument);
+    }
+
+    @ReactMethod
+    public void show(String text) {
+        Context context = getReactApplicationContext();
+        Toast.makeText(context, text, Toast.LENGTH_LONG).show();
     }
 }

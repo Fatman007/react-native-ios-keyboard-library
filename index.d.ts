@@ -1,11 +1,9 @@
-// TypeScript typings.
-
-export interface SnackbarStatic {
+export interface IosKeyboardLibraryStatic {
   /**
    * Shows a native Snackbar component.
    */
   show: (text: string) => void;
 }
 
-declare const Snackbar: SnackbarStatic;
-export default Snackbar;
+declare const IosKeyboardLibrary: IosKeyboardLibraryStatic;
+export default IosKeyboardLibrary;
