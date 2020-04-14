@@ -1,13 +1,13 @@
 import { NativeModules } from "react-native";
 
-type IosKeyboardLibrary = {
+type IosKeyboardLibraryStatic = {
   /**
    * Shows a native Snackbar component.
    */
   show: (text: string) => void,
 };
 
-const IosKeyboardLibrary: IosKeyboardLibrary = {
+const IosKeyboardLibrary: IosKeyboardLibraryStatic = {
   show(text: string) {
     NativeModules.IosKeyboardLibrary.show(text);
   },
